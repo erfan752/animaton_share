@@ -1,0 +1,212 @@
+    a:visited{
+        color: rgb(0, 149, 255);
+    }
+    a:hover{
+        color: rgb(0, 97, 166);
+    }
+.my-button {
+  /* استایل‌های اولیه دکمه */
+  padding: 10px 20px;
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer; /* تغییر نشانگر موس به دست */
+  transition: transform 0.4s ease; /* انیمیشن برای تغییر اندازه */
+  width: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+/* براس دکمه وارد شوید در  100 درصد عرض میندازیم*/
+@media screen and (min-width: 100px) and (max-width: 5000px) {
+  .my-button {
+    width: 100%; /*عرض دکمه 100 درصدمیشود*/
+  }
+}
+
+  @media screen and (min-width: 100px) and (max-width: 999px) {
+  .button-logo {
+    width: 100%; /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
+  }
+}  
+  @media screen and (min-width: 1000px) and (max-width: 5000px) {
+  .button-logo {
+    width: 1%; /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
+  }
+}  
+
+
+.my-button:hover {
+  transform: scale(1.3); /* دکمه 10 درصد بزرگتر می‌شود */
+    cursor: pointer; /* تغییر نشانگر موس به دست */
+
+}
+
+        .header-a {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+                .item {
+            padding: 0.2rem;
+            text-align: right;
+        }
+        .button-logo{
+            border: none;
+            background: none;
+              cursor: pointer; /* تغییر نشانگر موس به دست */
+              width: 100%;
+              height: 100%;
+        }
+        .header {
+  justify-content: space-between; /* پخش کردن دکمه ها به دو انتهای مخالف */
+  align-items: center; /* هم‌ترازی عمودی برای وسط قرار گرفتن */
+  width: 100%; /* مطمئن شوید که عرض کامل را دارد */
+  padding: 10px; /* اضافه کردن یک پدینگ برای فاصله از لبه‌ها (اختیاری) */
+}
+.backgrand-none-button{
+    background: none;
+    border: none;
+      cursor: pointer; /* تغییر نشانگر موس به دست */
+
+}
+table, td,th{
+text-align: right;
+width: 10%;
+}
+table{
+  border: solid 4px rgb(0, 109, 250);
+  border-radius: 20px;
+  background-color: black;
+position: absolute;
+left: 90%;
+
+}
+td{
+    text-align: right;
+}
+img{
+    width: 40%;
+}
+.anmaton-share-h1{
+color: rgb(5, 109, 255);
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+position:absolute;
+left: 170px;
+bottom:130px;
+}
+  @media screen and (min-width: 100px) and (max-width: 500px) {
+  .anmaton-share-h1 {
+    width: 35px; /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
+  }
+}
+
+        
+        .item-half-out {
+            position: absolute;
+            width: 200px; /* عرض عکس */
+            height: 150px; /* ارتفاع عکس */
+            left: 10px; /* عرض عکس به چپ */
+            bottom: 100px; /* ارتفاع عکس به پایین */
+        }
+          @media screen and (min-width: 100px) and (max-width: 500px) {
+  .item-half-out {
+    width: 20px; /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
+    height: 50px;
+  }
+}
+  @media screen and (min-width: 1000px) and (max-width: 5000px) {
+  .item-half-out {
+    width: 155px; /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
+  }
+}
+video{
+  left: 100px;
+}
+.video-left{
+    border-radius: 10px;
+width: 550px;
+height: 300px;
+position: absolute;
+left: 70px;
+}
+/*ریسپانسیو ویدیو در مانیتور پیسی*/
+  @media screen and (min-width: 1000px) and (max-width: 5000px) {
+  .video-left {
+
+  }
+}  
+  @media screen and (min-width: 700px) and (max-width: 900px) {
+  .video-left {
+
+  }
+}  
+.video-right{
+    border-radius: 10px;
+width: 550px;
+height: 300px;
+position: absolute;
+left: 700px;
+}
+.th-new-cartoons{
+  color: rgb(0, 98, 255);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;/*فونت متن*/
+  font-size: 35px;
+    float: right;
+  border-radius: 10px;
+  border: solid rgb(0, 89, 255);
+  width: 97%;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  position: absolute;
+  top: 920px;
+}
+
+
+.img-new-cartoons-1{
+  border-radius: 10px;
+  border: solid rgb(0, 89, 255);
+position: absolute;
+left: 1000px;
+bottom: -640px;
+width: 250px;
+height: 250px;
+}
+.img-new-cartoons-2{
+    border-radius: 10px;
+  border: solid rgb(0, 89, 255);
+position: absolute;
+left: 650px;
+bottom: -640px;
+width: 250px;
+height: 250px;
+}
+.gif-background-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* یا هر ارتفاعی که مد نظرتونه */
+  overflow: hidden;
+}
+
+.gif-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  object-fit: cover; /* تصویر رو به طور کامل در فضای والد جای میده */
+  z-index: -1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  /* استایل‌های مربوط به محتوا */
+}
+.blue-tik{
+width: 50px;
+height: 50px
+;
+}
