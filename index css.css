@@ -151,7 +151,7 @@
         width: 50px;
         height: 10px;
         position: absolute;
-        left: 75%;
+        left: 76.9%;
       }
 
     }
@@ -224,7 +224,10 @@
       left: 70px;
     }
 
-    /*ریسپانسیو ویدیو در مانیتور پیسی*/
+    .video-left:hover {
+      box-shadow: 0px 10px 30px rgb(0, 38, 255);
+    }
+
     @media screen and (min-width: 100px) and (max-width: 500px) {
       .video-left {
         width: 80%;
@@ -245,6 +248,11 @@
       height: 300px;
       position: absolute;
       left: 700px;
+      top: 520px;
+    }
+
+    .video-right:hover {
+      box-shadow: 0px 10px 30px rgb(0, 38, 255);
     }
 
     @media screen and (min-width: 100px) and (max-width: 500px) {
@@ -271,7 +279,7 @@
       padding-bottom: 20px;
       padding-top: 10px;
       position: absolute;
-      top: 920px;
+      top: 990px;
     }
 
     @media screen and (min-width: 100px) and (max-width: 500px) {
@@ -279,6 +287,7 @@
         width: 85%;
         font-size: 100%;
         float: right;
+        top: 800px;
       }
 
     }
@@ -289,7 +298,7 @@
       border: solid rgb(0, 89, 255);
       position: absolute;
       left: 1000px;
-      bottom: -640px;
+      top: 1090px;
       width: 250px;
       height: 250px;
     }
@@ -299,7 +308,7 @@
         width: 100px;
         height: 100px;
         position: absolute;
-        top: 980px;
+        top: 860px;
         left: 190px;
       }
 
@@ -310,7 +319,7 @@
       border: solid rgb(0, 89, 255);
       position: absolute;
       left: 650px;
-      bottom: -640px;
+      top: 1090px;
       width: 250px;
       height: 250px;
     }
@@ -320,7 +329,7 @@
         width: 100px;
         height: 100px;
         position: absolute;
-        top: 980px;
+        top: 860px;
         left: 50px;
       }
 
@@ -363,3 +372,103 @@
       width: 50px;
       height: 50px;
     }
+
+
+
+
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      justify-content: center;
+      margin: 30px auto;
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 500px) {
+      .video-container {
+        gap: 50px;
+
+      }
+
+    }
+
+    .video-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 550px;
+      height: 100%;
+      /* عرض بزرگتر شد */
+      box-shadow: 0 4px 8px rgba(0, 55, 253, 0.968);
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 500px) {
+      .video-card {
+        width: 80%;
+      }
+
+    }
+
+
+    .video-card iframe {
+      width: 100%;
+      height: 300px;
+      /* ارتفاع بیشتر شد */
+      border: none;
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 500px) {
+      .video-card iframe {
+        width: 100%;
+        height: 150px;
+      }
+
+    }
+
+    .video-info {
+      padding: 10px;
+      text-align: center;
+      height: 10%;
+    }
+
+    h3 {
+      display: inline;
+    }
+
+
+    .follow-btn {
+      background: rgb(50, 100, 236);
+      color: white;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline;
+      float: left;
+      margin-bottom: 10px;
+
+    }
+
+    .follow-btn:hover {
+      background: rgb(30, 80, 200);
+    }
+            .join {
+            border: none;
+            border-radius: 20px;
+            background-color: blue;
+            width: 100%;
+            padding: 10px;
+        }
+
+        /* فاصله دکمه انتهایی */
+        .footer-space {
+            margin-top: 450px; /* فاصله پیش‌فرض (دسکتاپ) */
+            text-align: center;
+        }
+
+        /* برای موبایل */
+        @media screen and (max-width: 500px) {
+            .footer-space {
+                margin-top: 200px; /* فاصله کمتر روی موبایل */
+            }
+        }
