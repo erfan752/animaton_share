@@ -4,67 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>انیمیشن شیر | سرویس اشتراک کارتون</title>
+    <title>Animation Share | سرویس اشتراک کارتون</title>
     <link rel="icon" href="3.png">
     <link rel="stylesheet" href="index css.css">
 </head>
 
 <body>
     <!-- هدر -->
-    <header>
-        <div class="gif-background-container">
-            <img src="div backgaound.gif" class="gif-background" alt="background">
-            <div class="header-container">
-                <div class="logo-title">
-                    <img src="3.png" alt="Logo" class="item-half-out">
-                    <h1 class="anmaton-share-h1">Animation Share</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><button class="my-button" onclick="window.open('sing in.html')">وارد شوید</button></li>
-                        <li><a href="full view.html"><img src="full watch.png" alt="Popular" class="button-logo"></a></li>
-                        <li><a href="settings.html"><img src="settings.png" alt="Settings" class="button-logo"></a></li>
-                    </ul>
-                </nav>
-            </div>
+    <header class="header">
+        <div class="logo-title">
+            <img src="3.png" alt="Logo" class="logo">
+            <h1>Animation Share</h1>
         </div>
+        <nav>
+            <ul>
+                <li><button class="btn-login" onclick="window.open('sing in.html')">وارد شوید</button></li>
+                <li><a href="full view.html"><img src="full watch.png" alt="Popular" class="nav-icon"></a></li>
+                <li><a href="settings.html"><img src="settings.png" alt="Settings" class="nav-icon"></a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- بنر اصلی -->
+    <section class="hero-banner">
+        <img src="div backgaound.gif" alt="Banner" class="banner-img">
+        <div class="hero-content">
+            <h2 class="fade-in-text">BETA: version 2.2</h2>
+        </div>
+    </section>
 
     <!-- بخش ویدیوها -->
     <main>
-        <section class="video-container">
-            <!-- کارت ویدیو ۱ -->
-            <div class="video-card">
-                <iframe src="https://www.aparat.com/video/video/embed/videohash/qkufkx5/vt/frame" allowfullscreen></iframe>
-                <div class="video-info">
-                    <h3>کلیپ کوتاه انیمر :پیکنیکی</h3>
-                    <button class="follow-btn">دنبال کردن</button>
+        <section class="video-section">
+            <h2 class="section-title">پربازدیدترین‌ها</h2>
+            <div class="video-cards">
+                <div class="video-card">
+                    <iframe src="https://www.aparat.com/video/video/embed/videohash/qkufkx5/vt/frame" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <h3>کلیپ کوتاه انیمر :پیکنیکی</h3>
+                        <button class="follow-btn">دنبال کردن</button>
+                    </div>
                 </div>
-            </div>
-
-            <!-- کارت ویدیو ۲ -->
-            <div class="video-card">
-                <iframe src="https://www.aparat.com/video/video/embed/videohash/h98a1mo/vt/frame" allowfullscreen></iframe>
-                <div class="video-info">
-                    <h3>تیزر کارتون لئو</h3>
-                    <button class="follow-btn">دنبال کردن</button>
+                <div class="video-card">
+                    <iframe src="https://www.aparat.com/video/video/embed/videohash/h98a1mo/vt/frame" allowfullscreen></iframe>
+                    <div class="video-info">
+                        <h3>تیزر کارتون لئو</h3>
+                        <button class="follow-btn">دنبال کردن</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <h2 class="th-new-cartoons">جدیدترین محصولات:</h2>
-        <section class="new-products">
-            <a href="#"><img src="flappy bird baner.jpg" alt="Flappy Bird" class="img-new-cartoons-1"></a>
-            <a href="#"><img src="animer2 baner.jpg" alt="Animer 2" class="img-new-cartoons-2"></a>
+        <!-- محصولات جدید -->
+        <section class="new-section">
+            <h2 class="section-title">جدیدترین محصولات</h2>
+            <div class="new-products">
+                <a href="#"><img src="flappy bird baner.jpg" alt="Flappy Bird" class="new-card"></a>
+                <a href="#"><img src="animer2 baner.jpg" alt="Animer 2" class="new-card"></a>
+            </div>
         </section>
     </main>
 
     <!-- فوتر -->
-    <div class="footer-space">
-        <button class="join">
+    <footer>
+        <button class="join-btn">
             <a href="https://rubika.ir/azemat1000">به کانال روبیکا ما بپیوندید</a>
         </button>
-    </div>
+    </footer>
 </body>
 
 </html>
