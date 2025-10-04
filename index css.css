@@ -1,474 +1,188 @@
-    a:visited {
-      color: rgb(0, 149, 255);
+/* فونت و پس‌زمینه */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #00164d, #0040ff);
+    color: #fff;
+}
+
+/* هدر */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+.header .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-login {
+    background-color: #3264ec;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #1f4bbc;
+}
+
+/* بنر اصلی */
+.hero-banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 70px; /* فاصله از هدر */
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.fade-in-text {
+    font-size: 2rem;
+    animation: colorChange 3s linear infinite;
+}
+
+/* انیمیشن تغییر رنگ */
+@keyframes colorChange {
+    0% { color: rgb(120,120,120); }
+    33% { color: rgb(0,81,255); }
+    66% { color: rgb(255,0,0); }
+    100% { color: rgb(120,120,120); }
+}
+
+/* بخش ویدیوها */
+.section-title {
+    margin: 20px 30px;
+    font-size: 28px;
+    color: #00bfff;
+}
+
+.video-cards {
+    display: flex;
+    gap: 20px;
+    padding: 0 30px 30px;
+    overflow-x: auto;
+}
+
+.video-card {
+    background: #001a66;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    min-width: 300px;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.follow-btn {
+    background: #3264ec;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    background: #1f4bbc;
+}
+
+/* محصولات جدید */
+.new-products {
+    display: flex;
+    gap: 20px;
+    padding: 0 30px 50px;
+    overflow-x: auto;
+}
+
+.new-card {
+    border-radius: 10px;
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+
+.new-card:hover {
+    transform: scale(1.05);
+}
+
+/* فوتر */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.join-btn {
+    border: none;
+    border-radius: 20px;
+    background-color: #3264ec;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.join-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ریسپانسیو */
+@media screen and (max-width: 600px) {
+    .video-cards, .new-products {
+        flex-direction: column;
+        gap: 15px;
     }
-
-    a:hover {
-      color: rgb(0, 97, 166);
-    }
-
-    /* این کد را به انتهای فایل style.css خود اضافه کنید */
-
-    /* تعریف قانون انیمیشن برای تغییر رنگ */
-    @keyframes colorChange {
-      0% {
-        color: rgb(120, 120, 120);
-        /* رنگ سفید (شروع) */
-      }
-
-      33% {
-        color: rgb(0, 81, 255);
-        /* رنگ آبی */
-      }
-
-      66% {
-        color: rgb(255, 0, 0);
-        /* رنگ قرمز */
-      }
-
-      100% {
-        color: rgb(120, 120, 120);
-        /* برگشت به رنگ سفید (پایان) */
-      }
-    }
-
-    /* اعمال انیمیشن به کلاس fade-in-text */
-    .fade-in-text {
-      animation-name: colorChange;
-      /* نام انیمیشن تغییر رنگ */
-      animation-duration: 3s;
-      /* مدت زمان انیمیشن (3 ثانیه) */
-      animation-timing-function: linear;
-      /* سرعت ثابت در طول انیمیشن */
-      animation-iteration-count: infinite;
-      /* تکرار بی‌پایان */
-    }
-
-    .my-button {
-      /* استایل‌های اولیه دکمه */
-      padding: 10px 20px;
-      background-color: blue;
-      color: rgb(255, 255, 255);
-      border: none;
-      cursor: pointer;
-      /* تغییر نشانگر موس به دست */
-      transition: transform 0.4s ease;
-      /* انیمیشن برای تغییر اندازه */
-      width: 30px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      border-radius: 10px;
-    }
-
-    /* براس دکمه وارد شوید در  100 درصد عرض میندازیم*/
-    @media screen and (min-width: 100px) and (max-width: 5000px) {
-      .my-button {
-        width: 100%;
-        /*عرض دکمه 100 درصدمیشود*/
-      }
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 999px) {
-      .button-logo {
-        width: 100%;
-        /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
-      }
-    }
-
-    @media screen and (min-width: 1000px) and (max-width: 5000px) {
-      .button-logo {
-        width: 1%;
-        /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
-      }
-    }
-
-
-    .my-button:hover {
-      transform: scale(1.3);
-      /* دکمه 10 درصد بزرگتر می‌شود */
-      cursor: pointer;
-      /* تغییر نشانگر موس به دست */
-
-    }
-
-    .header-a {
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #2c3e50;
-      margin-bottom: 1rem;
-    }
-
-    .item {
-      padding: 0.2rem;
-      text-align: right;
-    }
-
-    .button-logo {
-      border: none;
-      background: none;
-      cursor: pointer;
-      /* تغییر نشانگر موس به دست */
-      width: 100%;
-      height: 100%;
-    }
-
-    .header {
-      justify-content: space-between;
-      /* پخش کردن دکمه ها به دو انتهای مخالف */
-      align-items: center;
-      /* هم‌ترازی عمودی برای وسط قرار گرفتن */
-      width: 100%;
-      /* مطمئن شوید که عرض کامل را دارد */
-      padding: 10px;
-      /* اضافه کردن یک پدینگ برای فاصله از لبه‌ها (اختیاری) */
-    }
-
-    .backgrand-none-button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      /* تغییر نشانگر موس به دست */
-
-    }
-
-    table,
-    td,
-    th {
-      text-align: right;
-      width: 10%;
-    }
-
-    table {
-      border: solid 4px rgb(0, 109, 250);
-      border-radius: 20px;
-      background-color: black;
-      position: absolute;
-      left: 90%;
-
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      table {
-        width: 50px;
-        height: 10px;
-        position: absolute;
-        left: 76.9%;
-      }
-
-    }
-
-    td {
-      text-align: right;
-    }
-
-    img {
-      width: 40%;
-    }
-
-    .anmaton-share-h1 {
-      color: rgb(5, 109, 255);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      position: absolute;
-      left: 170px;
-      bottom: 130px;
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .anmaton-share-h1 {
-        font-size: 120%;
-        position: absolute;
-        top: 135px;
-        left: 85px;
-      }
-    }
-
-
-    .item-half-out {
-      width: 200px;
-      /* عرض عکس */
-      height: 150px;
-      /* ارتفاع عکس */
-      left: 10px;
-      /* عرض عکس به چپ */
-      position: absolute;
-      bottom: 100px;
-      /* ارتفاع عکس به پایین */
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .item-half-out {
-        width: 25%;
-        /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
-        height: 80px;
-        position: absolute;
-        top: 120px;
-        left: 5px;
-      }
-    }
-
-    @media screen and (min-width: 1000px) and (max-width: 5000px) {
-      .item-half-out {
-        width: 155px;
-        /* عرض دکمه 10 درصد از عرض صفحه می‌شود */
-      }
-    }
-
-    video {
-      left: 100px;
-    }
-
-    .video-left {
-      border-radius: 10px;
-      width: 550px;
-      height: 300px;
-      position: absolute;
-      left: 70px;
-    }
-
-    .video-left:hover {
-      box-shadow: 0px 10px 30px rgb(0, 38, 255);
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .video-left {
-        width: 80%;
-        height: 150px;
-        position: absolute;
-        left: 9%;
-        right: 8%;
-      }
-    }
-
-    @media screen and (min-width: 700px) and (max-width: 900px) {
-      .video-left {}
-    }
-
-    .video-right {
-      border-radius: 10px;
-      width: 550px;
-      height: 300px;
-      position: absolute;
-      left: 700px;
-      top: 520px;
-    }
-
-    .video-right:hover {
-      box-shadow: 0px 10px 30px rgb(0, 38, 255);
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .video-right {
-        width: 80%;
-        height: 150px;
-        position: absolute;
-        left: 9%;
-        right: 8%;
-        top: 580px;
-      }
-    }
-
-    .th-new-cartoons {
-      color: rgb(0, 98, 255);
-      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-      /*فونت متن*/
-      font-size: 35px;
-      float: right;
-      border-radius: 10px;
-      border: solid rgb(0, 89, 255);
-      width: 97%;
-      padding-right: 30px;
-      padding-bottom: 20px;
-      padding-top: 10px;
-      position: absolute;
-      top: 990px;
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .th-new-cartoons {
-        width: 85%;
-        font-size: 100%;
-        float: right;
-        top: 800px;
-      }
-
-    }
-
-
-    .img-new-cartoons-1 {
-      border-radius: 10px;
-      border: solid rgb(0, 89, 255);
-      position: absolute;
-      left: 1000px;
-      top: 1090px;
-      width: 250px;
-      height: 250px;
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .img-new-cartoons-1 {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 860px;
-        left: 190px;
-      }
-
-    }
-
-    .img-new-cartoons-2 {
-      border-radius: 10px;
-      border: solid rgb(0, 89, 255);
-      position: absolute;
-      left: 650px;
-      top: 1090px;
-      width: 250px;
-      height: 250px;
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .img-new-cartoons-2 {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 860px;
-        left: 50px;
-      }
-
-    }
-
-    .gif-background-container {
-      position: relative;
-      width: 100%;
-      height: 500px;
-      /* یا هر ارتفاعی که مد نظرتونه */
-      overflow: hidden;
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .gif-background-container {
-        width: 100%;
-        height: 250px;
-      }
-
-    }
-
-    .gif-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 70%;
-      object-fit: cover;
-      /* تصویر رو به طور کامل در فضای والد جای میده */
-      z-index: -1;
-    }
-
-    .content-overlay {
-      position: relative;
-      z-index: 1;
-      /* استایل‌های مربوط به محتوا */
-    }
-
-    .blue-tik {
-      width: 50px;
-      height: 50px;
-    }
-
-
-
-
-    .video-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 60px;
-      justify-content: center;
-      margin: 30px auto;
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .video-container {
-        gap: 50px;
-
-      }
-
-    }
-
-    .video-card {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      width: 550px;
-      height: 100%;
-      /* عرض بزرگتر شد */
-      box-shadow: 0 4px 8px rgba(0, 55, 253, 0.968);
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .video-card {
-        width: 80%;
-      }
-
-    }
-
-
-    .video-card iframe {
-      width: 100%;
-      height: 300px;
-      /* ارتفاع بیشتر شد */
-      border: none;
-    }
-
-    @media screen and (min-width: 100px) and (max-width: 500px) {
-      .video-card iframe {
-        width: 100%;
-        height: 150px;
-      }
-
-    }
-
-    .video-info {
-      padding: 10px;
-      text-align: center;
-      height: 10%;
-    }
-
-    h3 {
-      display: inline;
-    }
-
-
-    .follow-btn {
-      background: rgb(50, 100, 236);
-      color: white;
-      border: none;
-      padding: 10px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      display: inline;
-      float: left;
-      margin-bottom: 10px;
-
-    }
-
-    .follow-btn:hover {
-      background: rgb(30, 80, 200);
-    }
-            .join {
-            border: none;
-            border-radius: 20px;
-            background-color: blue;
-            width: 100%;
-            padding: 10px;
-        }
-
-        /* فاصله دکمه انتهایی */
-        .footer-space {
-            margin-top: 450px; /* فاصله پیش‌فرض (دسکتاپ) */
-            text-align: center;
-        }
-
-        /* برای موبایل */
-        @media screen and (max-width: 500px) {
-            .footer-space {
-                margin-top: 200px; /* فاصله کمتر روی موبایل */
-            }
-        }
+}
