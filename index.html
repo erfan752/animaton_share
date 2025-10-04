@@ -1,114 +1,70 @@
 <!DOCTYPE html>
-<html lang="fa_fa">
+<html lang="fa" dir="rtl">
 
-<head dir="rtl">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--تایتل-->
-    <title>انیمیشن شیر</title>
-    <!--ایکون-->
-    <link rel="icon" type="icon" href="3.png">
-    <!--متن بتا-->
-    <cite style="color: rgb(0, 136, 255);">
-        <fieldset>
-            <center class="fade-in-text">
-                <!--متن بالای سایت-->
-                BETA :vetsion 2.2
-        </fieldset>
-    </cite>
-    </center>
-    <!-- css -->
-    <link rel="stylesheet" href="index css.css">
-
+    <title>انیمیشن شیر | سرویس اشتراک کارتون</title>
+    <link rel="icon" href="3.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgba(70, 110, 255, 0.648);">
-    <!--دیو کل منو-->
+<body>
+    <!-- هدر -->
     <header>
         <div class="gif-background-container">
-            <img src="div backgaound.gif" class="gif-background">
-
-            <table>
-                <th>
-                    <!--دکمه وارد شوید-->
-                    <button class="my-button" onclick="window.open('sing in.html')"
-                        style="background-color: rgb(50, 100, 236);color: azure;font-family: 'Times New Roman', Times, serif;">
-                        وارد شوید
-                    </button>
-                </th>
-                <tr></tr>
-                <td>
-                    <!--دکمه پربازدید ترین ها-->
-                    <button class="button-logo"><a href="full view.html"><img class="button-logo"
-                                src="full watch.png" style="float: right;"></a></button>
-                </td>
-                <tr></tr>
-                <td>
-                    <!--دکمه تنظیمات-->
-                    <button class="button-logo"><a href="settings.html"><img class="button-logo"
-                                src="settings .png" style="float: right;"></a></button>
-                </td>
-            </table>
-
-            <div>
-                <!--لوگوی انیمیشن شر-->
-                <img class="item-half-out" src="3.png">
-                <!--متن انیمیشن شیر-->
-                <h1 class="anmaton-share-h1" title="animaton share name" style="float: left;">
-                    animaton share
-                </h1>
+            <img src="div backgaound.gif" class="gif-background" alt="background">
+            <div class="header-container">
+                <div class="logo-title">
+                    <img src="3.png" alt="Logo" class="item-half-out">
+                    <h1 class="anmaton-share-h1">Animation Share</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><button class="my-button" onclick="window.open('sing in.html')">وارد شوید</button></li>
+                        <li><a href="full view.html"><img src="full watch.png" alt="Popular" class="button-logo"></a></li>
+                        <li><a href="settings.html"><img src="settings.png" alt="Settings" class="button-logo"></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
-    <!-- بخش ویدیوها به صورت کارت -->
-    <div class="video-container">
-
-        <!-- کارت ویدیو ۱ -->
-        <div class="video-card">
-            <iframe src="https://www.aparat.com/video/video/embed/videohash/qkufkx5/vt/frame"></iframe>
-            <div class="video-info">
-                <h3> کلیپ کوتاه انیمر :پیکنیکی</h3>
-                <button class="follow-btn">دنبال کردن</button>
+    <!-- بخش ویدیوها -->
+    <main>
+        <section class="video-container">
+            <!-- کارت ویدیو ۱ -->
+            <div class="video-card">
+                <iframe src="https://www.aparat.com/video/video/embed/videohash/qkufkx5/vt/frame" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>کلیپ کوتاه انیمر :پیکنیکی</h3>
+                    <button class="follow-btn">دنبال کردن</button>
+                </div>
             </div>
-        </div>
 
-        <!-- کارت ویدیو ۲ -->
-        <div class="video-card">
-            <iframe src="https://www.aparat.com/video/video/embed/videohash/h98a1mo/vt/frame"></iframe>
-            <div class="video-info">
-                <h3>تیزر کارتون لئو </h3>
-                <button class="follow-btn">دنبال کردن</button>
-
+            <!-- کارت ویدیو ۲ -->
+            <div class="video-card">
+                <iframe src="https://www.aparat.com/video/video/embed/videohash/h98a1mo/vt/frame" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h3>تیزر کارتون لئو</h3>
+                    <button class="follow-btn">دنبال کردن</button>
+                </div>
             </div>
-        </div>
+        </section>
 
-    </div>
+        <h2 class="th-new-cartoons">جدیدترین محصولات:</h2>
+        <section class="new-products">
+            <a href="#"><img src="flappy bird baner.jpg" alt="Flappy Bird" class="img-new-cartoons-1"></a>
+            <a href="#"><img src="animer2 baner.jpg" alt="Animer 2" class="img-new-cartoons-2"></a>
+        </section>
+    </main>
 
-    <div>
-        <!-- اچ دو برای عنوان محصولات جدید -->
-        <h2 class="th-new-cartoons" dir="rtl">
-            جدید ترین محصولات :
-        </h2>
-        <div style="display: block;">
-            <a href="#"><img class="img-new-cartoons-1" src="flappy bird baner.jpg"
-                    title="برای دیدن جزییات کلیک کنید"></a>
-            <a href="#"><img class="img-new-cartoons-2" src="animer2 baner.jpg"
-                    title="برای دیدن جزییات کلیک کنید"></a>
-        </div>
-    </div>
-
-    <!-- بخش فاصله و دکمه پایانی -->
+    <!-- فوتر -->
     <div class="footer-space">
         <button class="join">
-            <a href="https://rubika.ir/azemat1000"
-                style="color: #fff;text-decoration: none;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                به کانال روبییکا ما بپیوندید
-            </a>
+            <a href="https://rubika.ir/azemat1000">به کانال روبیکا ما بپیوندید</a>
         </button>
     </div>
 </body>
 
 </html>
-
-
